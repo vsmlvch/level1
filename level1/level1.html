@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/a99b741228.js" crossorigin="anonymous"></script>
+    <link type="Image/x-icon" href="./assets/image/favicon.png" rel="icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <input type="checkbox" id="burgertoogle" />
+            <label class="burger-button" for="burgertoogle">
+                <div class="burger-button__line line1"></div>
+                <div class="burger-button__line line2"></div>
+                <div class="burger-button__line line3"></div>
+            </label>
+
+            <div class="navbar-container">
+                <a href="#" class="logo" id="logo">
+                    <img src="./assets/images/ACTIVEBOX-2.svg" alt="">
+                    <img src="./assets/images/ACTIVEBOX.svg" alt="">
+                </a>
+                <div class="navbar-wrap">
+                    <ul class="links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>            
+
+        <div class="navbar-container__mobile">
+            <div class="logo">
+                <img src="./assets/image/AXIT.svg" alt="">
+                <img src="./assets/image/AXIT-1.svg" alt="">
+            </div>
+            <div class="navbar-wrap__mobile">
+                <ul class="links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-container">
+            <div class="banner-header">
+                <div class="banner-img">
+                    <!-- <img src="./assets/images/ACTIVEBOX-2.svg" alt="">
+                    <img src="./assets/images/ACTIVEBOX.svg" alt=""> -->
+                </div>
+                <div class="banner-text">
+                    <h1 class="banner-header__h1">Your Favorite One Page Multi Purpose TemplateS</h1>
+                    <div class="banner-header__line"></div>
+                    <p class="banner-header__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+                        vel scelerisque nisl consectetur et.</p>
+                    <input class="banner-header__button" type="button" value="Find Out More" />
+                </div>
+            </div>
+                </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-social">
+            <button class="slider__btn_face">
+                <i class="fa-brands fa-facebook fa-3x"></i>
+            </button>
+            <button class="slider__btn_twi">
+                <i class="fa-brands fa-twitter fa-3x"></i>
+            </button>
+            <button class="slider__btn_link">
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+            </button>
+            
+            </button>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-bottom__p">Copyright © 2015 ActiveBox. All Rights Reserved
+                Made with <span>&nbsp by Kamal Chaneman &nbsp</span></p>
+        </div>
+    </footer>
+
+
+
+    <script>
+    document.querySelector('.burger-button').addEventListener('click', function(){
+        this.classList.toggle('active');
+        document.querySelector('.navbar-wrap__mobile').classList.toggle('open');
+    })
+</script>
+</body>
+</html>
